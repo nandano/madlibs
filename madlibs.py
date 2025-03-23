@@ -25,4 +25,9 @@ Everyone gathered around to watch in amazement.",
     print("\nHere is the story you made:\n")
     print(story)
 
-mad_libs()
+while True:
+    mad_libs()
+    should_quit = input("Do you want to exit the game? (y/n): ")
+    if should_quit == 'y':
+        print("Thank you for playing Mad Libs!\nHave a nice day.")
+        break
