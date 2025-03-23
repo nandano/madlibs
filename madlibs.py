@@ -1,12 +1,16 @@
 import random
 
-def mad_libs():
-    print("Let's play Mad Libs! Fill in the blanks.")
-
+def get_user_input():
     adjective = input("Enter an adjective: ")
     noun = input("Enter a noun: ")
     verb = input("Enter a verb: ")
     place = input("Enter a place: ")
+    return adjective, noun, verb, place
+
+def mad_libs():
+    print("\nLet's play Mad Libs! Fill in the blanks.\n")
+
+    adjective, noun, verb, place = get_user_input()
 
     stories = [
         f"I was walking through the {place} when I saw a {adjective} {noun}. \
